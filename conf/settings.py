@@ -119,6 +119,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'www/data')
 STATIC_ROOT = os.path.join(BASE_DIR, 'www/static')
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
 MEDIA_URL = '/data/'
 
 # Django debug toolbar configuration
@@ -133,7 +138,7 @@ APPEND_SLASH = True
 
 #SESSION_SAVE_EVERY_REQUEST = True
 
-ADMIN_APP_SUBDOMAIN = 'admin'
+ADMIN_APP_SUBDOMAIN = 'wk'
 
 SUBDOMAIN_URLCONFS = {
     None: 'app.site_urls',

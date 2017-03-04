@@ -1,4 +1,0 @@
-dartcms
-django-rosetta
-django-subdomains
-psycopg2
