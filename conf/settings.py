@@ -94,7 +94,7 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 LANGUAGES = [
     ('ru-ru', 'Russian'),
     ('en-us', 'English'),
