@@ -9,15 +9,15 @@
     <title>{% block title %}{% endblock %}{{ site_settings.site_title }}</title>
 
     {% block core_css %}
-        <link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'dist/css/vendors.css' %}" rel="stylesheet">
+        <link href="{% static 'dist/css/main.css' %}" rel="stylesheet">
     {% endblock %}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="{% static 'js/lib/respond/respond.min.js' %}"></script>
-    <script src="{% static 'js/lib/shiv/html5shiv.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
     {% block inline_css %}{% endblock %}
@@ -34,8 +34,8 @@
 {% endblock %}
 
 {% block core_js %}
-    <script src="{% static 'js/lib/jquery/jquery-1.11.1.min.js' %}"></script>
-    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'dist/js/vendors.js' %}"></script>
+<script src="{% static 'dist/js/main.js' %}"></script>
 {% endblock %}
 {% block inline_js %}{% endblock %}
 </body>

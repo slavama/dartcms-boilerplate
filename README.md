@@ -13,7 +13,7 @@ Features
 - Bootstrap 3 as CSS framework
 - PostgreSQL as database. Why? Because it's awesome.
 - Subdomain based architecture. Your admin app will be on different domain (`admin` by default) that your public application part.
-
+- Frontend with Less & ES2015
 
 Quickstart
 ----------
@@ -29,6 +29,7 @@ Quickstart
 - Run `python manage.py migrate`
 - Create Django's superuser: `python manage.py createsuperuser`
 - Run `python manage.py runserver`
+- Cd into static && npm i && webpack --watch
 - Navigate your browser to `http://admin.example.dev:8000/admin/modules/module/` and setup DartCMS module rights for your superuser
 
 
